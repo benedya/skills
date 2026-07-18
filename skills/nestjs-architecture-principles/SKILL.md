@@ -178,6 +178,10 @@ export class ArticlesModule {}
 
 - One type per file. Group types in one file only when highly cohesive and it
   improves readability.
+- Never suffix type/interface files with `.type` / `.interface` / `.types` —
+  name them for the concept: `article-filters.ts`, not
+  `article-filters.interface.ts` (the `types/` folder already says what's
+  inside).
 - No barrel files (e.g. `index.ts` re-exporting a folder). Import directly from
   the defining file.
 - Use the project's TypeScript path aliases; never cross-module relative imports

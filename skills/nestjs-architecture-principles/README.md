@@ -14,7 +14,7 @@ Part of the [nestjs-skills](../../README.md) collection.
 - **Services** — single-responsibility business logic, composition over god-services, dependency injection, logging.
 - **Persistence (TypeORM)** — entities with explicit `@Entity`/`@Column` names, nullable typing, predictable constraint/index naming, and custom repositories that own queries.
 - **Module boundaries & DTOs** — export services only, communicate across modules with DTOs, expose data safely (never leak entities or secrets).
-- **Code organization & testing** — one type per file, no barrels, path aliases, and the unit-vs-integration testing split.
+- **Code organization & testing** — one type per file, no `.type`/`.interface` filename suffixes, no barrels, path aliases, and the unit-vs-integration testing split.
 
 ## Prerequisites
 
