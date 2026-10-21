@@ -5,7 +5,7 @@ layered architecture and house conventions for building features in a
 **NestJS + TypeORM** backend — so generated and edited code follows the same
 structure, naming, and design principles a senior engineer would apply.
 
-Part of the [nestjs-skills](../../README.md) collection.
+Part of the [skills](../../README.md) collection.
 
 ## What it covers
 
@@ -33,7 +33,7 @@ when your project uses:
 ### Option 1 — skills.sh CLI (quickest)
 
 ```bash
-npx skills add benedya/nestjs-skills --skill nestjs-architecture-principles
+npx skills add benedya/skills --skill nestjs-architecture-principles
 ```
 
 The [`skills`](https://www.skills.sh) CLI copies the skill into your agent's
@@ -52,14 +52,14 @@ scans for skills:
 | Other agents | see [agentskills.io/clients](https://agentskills.io/clients) |
 
 ```bash
-git clone https://github.com/benedya/nestjs-skills.git
+git clone https://github.com/benedya/skills.git
 
 # Claude Code — make it available in every project
-cp -R nestjs-skills/skills/nestjs-architecture-principles ~/.claude/skills/
+cp -R skills/skills/nestjs-architecture-principles ~/.claude/skills/
 
 # VS Code + GitHub Copilot — scoped to the current project
 mkdir -p .agents/skills
-cp -R nestjs-skills/skills/nestjs-architecture-principles .agents/skills/
+cp -R skills/skills/nestjs-architecture-principles .agents/skills/
 ```
 
 ### Verify

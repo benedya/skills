@@ -5,7 +5,7 @@ how a commit was made — agent, model, mode, token usage, time and context — 
 [git trailers](https://git-scm.com/docs/git-interpret-trailers) at the end of
 every commit message they create.
 
-Part of the [nestjs-skills](../../README.md) collection. Not NestJS-specific:
+Part of the [skills](../../README.md) collection. Not NestJS-specific:
 it works in any git repository.
 
 ## What it adds
@@ -40,7 +40,7 @@ get `AI-Harness`, `AI-Model` and `AI-Config`.
 ### Option 1 — skills.sh CLI (quickest)
 
 ```bash
-npx skills add benedya/nestjs-skills --skill ai-commit-trailers
+npx skills add benedya/skills --skill ai-commit-trailers
 ```
 
 The [`skills`](https://www.skills.sh) CLI copies the skill into your agent's
@@ -59,14 +59,14 @@ skills:
 | Other agents | see [agentskills.io/clients](https://agentskills.io/clients) |
 
 ```bash
-git clone https://github.com/benedya/nestjs-skills.git
+git clone https://github.com/benedya/skills.git
 
 # Claude Code — make it available in every project
-cp -R nestjs-skills/skills/ai-commit-trailers ~/.claude/skills/
+cp -R skills/skills/ai-commit-trailers ~/.claude/skills/
 
 # VS Code + GitHub Copilot — scoped to the current project
 mkdir -p .agents/skills
-cp -R nestjs-skills/skills/ai-commit-trailers .agents/skills/
+cp -R skills/skills/ai-commit-trailers .agents/skills/
 ```
 
 ### Verify
