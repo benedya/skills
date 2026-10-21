@@ -34,6 +34,7 @@ AI-Context: used=150000 window=1000000
 - **Missing information means no trailer.** Write a trailer only when you found its value in a reliable source: your system prompt, your settings, environment variables, or a usage log or report from your harness. If you can't find it, leave that line out: no `unknown`, no placeholders, no estimates. If nothing is found, commit without trailers.
 - **Never estimate usage.** Don't count tokens from the conversation, and don't guess times from memory. Token and time values must come from data the harness recorded.
 - Keep the keys and their order as above. Don't use `AI-Mode`: git matches trailer keys by prefix, so it would collide with `AI-Model`.
+- Don't add an `AI-Session` trailer or any other session id.
 - Don't add `Co-Authored-By` or "Generated with" lines; these trailers are the AI attribution.
 - If the user says not to tag a commit, don't. Don't tag merge or squash commits created by git itself.
 
