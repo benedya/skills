@@ -1,11 +1,9 @@
 # Agent Skills
 
 A collection of [Agent Skills](https://agentskills.io/home) for AI coding
-agents — architecture and conventions for building **NestJS** applications, plus
-general-purpose workflow skills that work in any repository. Each skill is a
-self-contained folder under [`skills/`](skills/) that any skills-compatible
-agent — Claude Code, VS Code + GitHub Copilot, Cursor, OpenAI Codex, and
-[others](https://agentskills.io/clients) — loads on demand.
+agents. Each skill is a self-contained folder under [`skills/`](skills/) that
+any skills-compatible agent — Claude Code, VS Code + GitHub Copilot, Cursor,
+OpenAI Codex, and [others](https://agentskills.io/clients) — loads on demand.
 
 ## Skills
 
