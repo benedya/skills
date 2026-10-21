@@ -11,6 +11,7 @@ Codex, and [others](https://agentskills.io/clients) — loads on demand.
 | Skill | Description |
 | --- | --- |
 | [**nestjs-architecture-principles**](skills/nestjs-architecture-principles) | Layered architecture and conventions for a NestJS + TypeORM backend: request-flow layering, SOLID/DRY, services, TypeORM entities & custom repositories, DTOs, module boundaries, and testing. **Requires TypeORM.** |
+| [**ai-commit-trailers**](skills/ai-commit-trailers) | Adds AI metadata — agent, model, mode, token usage, time and context — as git trailers to every commit an AI agent creates. Agent-independent; works in any git repository. |
 
 Each skill's own README documents what it covers, its prerequisites, and how to
 install it.
