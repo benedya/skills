@@ -1,7 +1,7 @@
 # AI Commit Trailers
 
 An [Agent Skill](https://agentskills.io/home) that makes AI coding agents record
-how a commit was made — agent, model, mode, token usage, credits, time and context — as
+how a commit was made — agent, model, mode, token usage, credits, time, context and session id — as
 [git trailers](https://git-scm.com/docs/git-interpret-trailers) at the end of
 every commit message they create.
 
@@ -11,10 +11,6 @@ it works in any git repository.
 ## What it adds
 
 ```
-feat: add dark mode toggle
-
-Explain the why, as usual.
-
 AI-Harness: Claude Code 2.1.0 cli
 AI-Model: claude-opus-5-5, claude-haiku-5-5
 AI-Config: mode=auto effort=high
@@ -22,6 +18,7 @@ AI-Tokens: input=400 output=18000 cache_read=1800000 cache_write=95000
 AI-Credits: 3
 AI-Time: 23m10s, 4 prompts
 AI-Context: used=150000 window=1000000
+AI-Session: 3f2b9c1e-7a4d-4e8b-9c62-1d5f0a8e4b27
 ```
 
 - **AI-Harness** — the agent or tool, with version and surface when known.
@@ -31,6 +28,7 @@ AI-Context: used=150000 window=1000000
 - **AI-Credits** — credits used in the session.
 - **AI-Time** — time spent and number of prompts in the session.
 - **AI-Context** — how full the context window was at commit time.
+- **AI-Session** — the harness's id for the session, to trace a commit back to its conversation.
 
 **Values are per session.** Usage, credits and time cover the agent session that
 made the commit, from its start up to the commit. Several commits from one session
