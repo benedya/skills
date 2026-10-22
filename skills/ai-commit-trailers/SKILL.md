@@ -62,5 +62,5 @@ AI-Config: ..."
 ## Reading them back
 
 ```bash
-git log --format='%h %s%n%(trailers:key=AI-Harness,key=AI-Model,separator=%x20|%x20)' -10
+git log -10 --format='%x1e%h %s%n%b' | awk 'BEGIN{RS="\036"} NF{n=split($0,l,"\n"); if(c++) print ""; print l[1]; for(i=2;i<=n;i++){s=l[i]; sub(/^ +/,"",s); if(s ~ /^AI-/) print s}}'
 ```
