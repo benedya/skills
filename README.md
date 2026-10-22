@@ -23,8 +23,8 @@ npx skills add benedya/skills --skill nestjs-architecture-principles
 
 ### [ai-commit-trailers](skills/ai-commit-trailers)
 
-Adds AI metadata — agent, model, mode, token usage, time and context — as git
-trailers to every commit an AI agent creates. Works in any git repository.
+Adds AI metadata — agent, model, mode, token usage, credits, time and context —
+as git trailers to every commit an AI agent creates. Works in any git repository.
 
 ```bash
 npx skills add benedya/skills --skill ai-commit-trailers
