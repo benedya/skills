@@ -5,9 +5,6 @@ how a commit was made — agent, model, mode, token usage, credits, time, contex
 [git trailers](https://git-scm.com/docs/git-interpret-trailers) at the end of
 every commit message they create.
 
-Part of the [skills](../../README.md) collection. Not NestJS-specific:
-it works in any git repository.
-
 ## What it adds
 
 ```
@@ -72,11 +69,6 @@ cp -R skills/skills/ai-commit-trailers ~/.claude/skills/
 mkdir -p .agents/skills
 cp -R skills/skills/ai-commit-trailers .agents/skills/
 ```
-
-### Verify
-
-- **Claude Code** — run `/skills` and confirm `ai-commit-trailers` is listed.
-- **VS Code** — open Copilot Chat, switch to **Agent** mode, type `/skills`, and confirm it appears.
 
 ## Reading the trailers back
 
