@@ -27,6 +27,11 @@ AI-Session: 3f2b9c1e-7a4d-4e8b-9c62-1d5f0a8e4b27
 - **AI-Context** — how full the context window was at commit time.
 - **AI-Session** — the harness's id for the session, to trace a commit back to its conversation.
 
+**Only commits made by the agent are tagged.** The skill runs when the AI agent
+itself creates the commit, for example when you ask it to "commit this". Commits
+you make yourself (from the terminal, your IDE or a git GUI) get no trailers, even
+if the agent wrote the code.
+
 **Values are per session.** Usage, credits and time cover the agent session that
 made the commit, from its start up to the commit. Several commits from one session
 each carry the session's running totals, so don't add them up.
