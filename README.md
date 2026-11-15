@@ -30,6 +30,14 @@ as git trailers to every commit an AI agent creates. Works in any git repository
 npx skills add benedya/skills --skill ai-commit-trailers
 ```
 
+### [testing-principles](skills/testing-principles)
+
+Language- and framework-independent rules for writing tests.
+
+```bash
+npx skills add benedya/skills --skill testing-principles
+```
+
 To install every skill at once:
 
 ```bash
