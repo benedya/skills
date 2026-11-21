@@ -18,6 +18,8 @@ automated tests.
 - **Writing only tests that earn their place**: no mocks that reimplement real
   logic, no duplicate coverage, the fewest tests that still cover every edge
   case.
+- **Structuring each test as Arrange, Act, Assert**: three sections, each
+  marked with its own comment.
 - **Keeping tests in sync**: updating tests in place when behavior changes or
   moves, instead of adding new tests next to outdated ones.
 

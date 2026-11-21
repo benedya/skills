@@ -68,6 +68,27 @@ through an entry point when they are already covered at the domain level.
   could hide: empty or missing input, empty collections, disabled flags or
   config, boundary values, error paths.
 
+## Structure every test as Arrange, Act, Assert
+
+Split every test case into three sections, in this order, and mark each one
+with its own comment in the language's comment syntax:
+
+- **Arrange**: build the inputs, test data, mocks and the unit under test.
+- **Act**: run the one behavior being tested, usually a single call.
+- **Assert**: check the result, the side effects and the calls to
+  dependencies.
+
+```
+// Arrange
+order = buildOrder(items: [item(price: 10), item(price: 5)])
+
+// Act
+total = calculator.total(order)
+
+// Assert
+expect(total).toEqual(15)
+```
+
 ## Keep tests in sync with the code
 
 - **When behavior changes, update its tests in place.** Fix expectations,
